@@ -13,7 +13,7 @@ export default function UserDraw() {
   const handleLogoClick = () => {
     const newClicks = logoClicks + 1;
     setLogoClicks(newClicks);
-    if (newClicks >= 5) {
+    if (newClicks >= 10) {
       window.location.search = '?admin=true';
     }
   };
