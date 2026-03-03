@@ -1,0 +1,16 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# SQLite database files (stored on server volume, not in source control)
+*.db
+*.db-wal
+*.db-shm
+
+# Scratch/test scripts
+test_sqlite.mjs

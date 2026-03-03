@@ -1,0 +1,5 @@
+{
+  "name": "Gift Exchange Manager",
+  "description": "A simple app to manage gift exchanges. Upload participants and let them draw their secret giftee.",
+  "requestFramePermissions": []
+}
