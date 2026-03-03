@@ -68,8 +68,8 @@ export default function UserDraw() {
               className="cursor-pointer bg-white p-2 rounded-full shadow-lg w-24 h-24 flex items-center justify-center overflow-hidden"
             >
               <img 
-                src="/logo.svg" 
-                alt="Fellowship Logo" 
+                src="/TGGHM.png" 
+                alt="Corpers Fellowship Logo" 
                 className="w-full h-full object-contain"
                 onError={(e) => {
                   // Fallback if image fails to load
