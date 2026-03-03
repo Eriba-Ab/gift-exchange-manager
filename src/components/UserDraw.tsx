@@ -80,8 +80,8 @@ export default function UserDraw() {
             </motion.div>
           </div>
 
-          <h1 className="text-2xl font-bold relative z-10">Secret Gift Exchange</h1>
-          <p className="text-indigo-100 text-sm relative z-10">Enter your name to reveal your match!</p>
+          <h1 className="text-2xl font-bold relative z-10">TGGHM Corpers Fellowship Gift Exchange</h1>
+          <p className="text-indigo-100 text-sm relative z-10">Enter your name to reveal who you're gifting to!</p>
         </div>
 
         <div className="p-6 space-y-6">
@@ -89,7 +89,7 @@ export default function UserDraw() {
             <div className="space-y-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Your Name
+                  Your Name (You can input your full name or one name)
                 </label>
                 <div className="relative">
                   <User className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
@@ -116,7 +116,7 @@ export default function UserDraw() {
                   <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
                 ) : (
                   <>
-                    Reveal My Match <Sparkles className="w-4 h-4" />
+                    Reveal Who I'm Gifting To <Sparkles className="w-4 h-4" />
                   </>
                 )}
               </motion.button>
