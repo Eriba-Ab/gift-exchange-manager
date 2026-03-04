@@ -51,9 +51,9 @@ export default function UserDraw() {
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="bg-white rounded-2xl shadow-xl border border-indigo-50 overflow-hidden"
+        className="bg-white rounded-2xl shadow-xl border border-green-50 overflow-hidden"
       >
-        <div className="bg-indigo-600 p-6 text-white text-center relative overflow-hidden">
+        <div className="bg-green-600 p-6 text-white text-center relative overflow-hidden">
           <motion.div
             animate={{ rotate: 360 }}
             transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
@@ -74,14 +74,14 @@ export default function UserDraw() {
                 onError={(e) => {
                   // Fallback if image fails to load
                   e.currentTarget.style.display = 'none';
-                  e.currentTarget.parentElement!.innerHTML = '<span class="text-xs text-indigo-600 font-bold">LOGO</span>';
+                  e.currentTarget.parentElement!.innerHTML = '<span class="text-xs text-green-600 font-bold">LOGO</span>';
                 }}
               />
             </motion.div>
           </div>
 
           <h1 className="text-2xl font-bold relative z-10">TGGHM Corpers Fellowship Gift Exchange</h1>
-          <p className="text-indigo-100 text-sm relative z-10">Enter your name to reveal who you're gifting to!</p>
+          <p className="text-green-100 text-sm relative z-10">Enter your name to reveal who you're gifting to!</p>
         </div>
 
         <div className="p-6 space-y-6">
@@ -97,7 +97,7 @@ export default function UserDraw() {
                     type="text"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all"
+                    className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all"
                     placeholder="e.g. John Doe"
                     onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); handleDraw(); } }}
                   />
@@ -110,7 +110,7 @@ export default function UserDraw() {
                 whileTap={{ scale: 0.98 }}
                 onClick={handleDraw}
                 disabled={loading || !name.trim()}
-                className="w-full py-3 bg-indigo-600 text-white rounded-xl font-semibold shadow-lg shadow-indigo-200 hover:shadow-indigo-300 disabled:opacity-50 disabled:shadow-none transition-all flex justify-center items-center gap-2"
+                className="w-full py-3 bg-green-600 text-white rounded-xl font-semibold shadow-lg shadow-green-200 hover:shadow-green-300 disabled:opacity-50 disabled:shadow-none transition-all flex justify-center items-center gap-2"
               >
                 {loading ? (
                   <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
